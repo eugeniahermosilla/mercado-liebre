@@ -1,0 +1,293 @@
+:root {
+  --primary: #eac926;
+  --main-yellow: #eac926;
+  --dark-blue: #03264c;
+  --light-blue: #1259c3;
+  --dark-grey: #666;
+  --light-grey: #ebebeb;
+  --green: #39b54a;
+  --white: #ffffff;
+}
+
+/* Clases generales */
+.center {
+  text-align: center;
+  margin: 10px;
+}
+
+/* Body */
+body {
+  background-color: var(--light-grey);
+}
+
+/* Fuentes. No me toma el -> * <- */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+i {
+  font-size: 2em;
+}
+
+p {
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+/* Header */
+.header {
+  background-color: var(--main-yellow);
+}
+
+.header-principal {
+  padding: 15px;
+}
+
+.header-secundario {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor-logo {
+  width: 50%;
+}
+
+.buscador {
+  width: 50%;
+  display: flex;
+  border-color: var(--white);
+}
+
+.icono-parrafo {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.icono-parrafo-inicio {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.icono-busqueda {
+  background-color: var(--light-grey);
+  border: 1px solid var(--dark-grey);
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 12px 12px 0px;
+}
+
+.buscador i {
+  font-size: 15px;
+  padding: 1px;
+}
+.contenedor-logo img {
+  width: 100%;
+}
+
+.buscador input {
+  width: 90%;
+  border-right: none;
+  border: none;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.buscador .icono-busqueda {
+  width: 10%;
+  background-color: var(--white);
+  border-color: var(--white);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.burger-menu {
+  background-color: var(--light-blue);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.burger-menu i {
+  font-size: 20px;
+  color: var(--light-grey);
+}
+
+/* Main */
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 90%;
+}
+
+.contenedor-lista {
+  padding: 15px;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+.login-navbar {
+  display: none;
+}
+
+.articulo {
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
+
+.articulo .articulo-descripcion {
+  margin-top: 5px;
+  padding: 15px;
+  border-top: 1px solid var(--light-grey);
+}
+
+.articulo-descripcion h4,
+.articulo-descripcion h5 {
+  margin-bottom: 5px;
+}
+
+.icono-camion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #39b54a;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  margin-top: -31px;
+}
+
+.icono-camion i {
+  font-size: 16px;
+  padding: 5px;
+  color: #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.articulo-descripcion-precio-desc {
+  display: flex;
+  flex-direction: row;
+}
+
+.articulo-descripcion-precio-desc h4 {
+  width: 30%;
+}
+
+.articulo-descripcion .descuento {
+  color: var(--green);
+  width: 70%;
+}
+
+.articulo-descripcion-nombre {
+  color: var(--dark-grey);
+  margin-top: 15px;
+  display: none;
+}
+
+.contenedor-subtitulo {
+  margin-bottom: 20px;
+  color: var(--dark-grey);
+}
+
+.contenedor-subtitulo h3 {
+  color: var(--dark-grey);
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  padding: 15px;
+  background-color: var(--white);
+}
+
+.footer-texto {
+  margin: 25px 0 25px 0;
+}
+
+.footer-texto-titulo {
+  margin: 8px;
+}
+
+.footer-texto .copy {
+  margin-top: 20px;
+  color: var(--dark-grey);
+}
+
+.foter-texto-icono {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.foter-texto-icono i {
+  font-size: 2em;
+  color: var(--light-blue);
+}
+
+/* tablets */
+
+@media (min-width: 361px) {
+  /* main */
+  .articulo-descripcion-nombre {
+    display: block;
+  }
+
+  .articulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .menu-desktop {
+    display: block;
+  }
+
+  .login-navbar {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .seccion-articulos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .articulo {
+    width: 50%;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 769px) {
+  .articulo {
+    width: 25%;
+  }
+}
