@@ -347,6 +347,11 @@ h5 {
     margin-right: 10px;
   }
 
+  .menu-desktop a,
+  .login-navbar a {
+    text-decoration: none;
+  }
+
   .login-navbar {
     display: flex;
   }
