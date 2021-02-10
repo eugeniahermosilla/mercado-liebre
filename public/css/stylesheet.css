@@ -10,6 +10,7 @@
 }
 
 /* Clases generales */
+
 .center {
   text-align: center;
   margin: 10px;
@@ -66,6 +67,8 @@ h5 {
 
 .contenedor-logo {
   width: 50%;
+  padding-right: 5px;
+  box-sizing: border-box;
 }
 
 .buscador {
@@ -98,6 +101,10 @@ h5 {
   padding: 1px;
 }
 .contenedor-logo img {
+  width: 100%;
+}
+
+.texto-compra {
   width: 100%;
 }
 
@@ -159,6 +166,10 @@ h5 {
   background-color: var(--white);
 }
 
+.articulo-descripcion {
+  position: relative;
+}
+
 .articulo .articulo-descripcion {
   margin-top: 5px;
   padding: 15px;
@@ -179,7 +190,7 @@ h5 {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 50px;
+  right: 20px;
   margin-top: -31px;
 }
 
@@ -194,10 +205,12 @@ h5 {
 .articulo-descripcion-precio-desc {
   display: flex;
   flex-direction: row;
+  padding-top: 5px;
 }
 
 .articulo-descripcion-precio-desc h4 {
   width: 30%;
+  min-width: 89px;
 }
 
 .articulo-descripcion .descuento {
@@ -255,6 +268,19 @@ h5 {
 
 @media (min-width: 361px) {
   /* main */
+
+  .contenedor-logo {
+    width: 33.33%;
+    padding-right: 20px;
+  }
+
+  .buscador {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .articulo-descripcion-nombre {
     display: block;
   }
@@ -263,12 +289,33 @@ h5 {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+  }
+
   .menu-desktop {
-    display: block;
+    display: flex;
+  }
+
+  .menu-desktop li {
+    margin-right: 10px;
   }
 
   .login-navbar {
-    display: block;
+    display: flex;
+  }
+
+  .login-navbar li {
+    margin-left: 10px;
+  }
+
+  .texto-compra {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .burger-menu {
@@ -278,9 +325,10 @@ h5 {
   .seccion-articulos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .articulo {
-    width: 50%;
+    width: 47%;
   }
 }
 
@@ -288,6 +336,6 @@ h5 {
 
 @media (min-width: 769px) {
   .articulo {
-    width: 25%;
+    width: 23%;
   }
 }
