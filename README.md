@@ -1,6 +1,8 @@
 # tarea-mercado-liebre
 
-MICRO DESAFIO 1
+Disponible en [Heroku](https://mercado-liebre-eh.herokuapp.com/)
+
+## MICRO DESAFIO 1
 
 Hice el archivo git.ignore para que ignore la carpeta node mudules que se genera automaticamente cada vez que alguien se desarga el proyecto.
 
@@ -16,7 +18,7 @@ const staticFolder = path.resolve(\_\_dirname, "./public"); En esta parte estamo
 
 app.use(express.static(staticFolder)); Aca uso el metodo app.use que recibe express.static al cual le pasamos la ruta almacenada en el paso anterior.
 
-MICRODESAFIO PARTE 3
+## MICRODESAFIO PARTE 3
 
 Lo primero que hago es agregar un archivo css reset para eliminar cualquier estilo que le pueda dar el navegador por default.
 
@@ -27,3 +29,7 @@ Con el \* {} selecionamos todos los elementos HTML y le aplicamos el estilo Robo
 Para usar los iconos en el documento HTML importamos los iconos.
 
 Cree clases generales, para poder aplicarle el estilo de esa clase a las etiquetas que la implementen.
+
+## Configuraciones de deploy
+
+Tuve que agregar el puerto como variable de entorno ya que Heroku lo inyecta de manera dinámica en el .env.
