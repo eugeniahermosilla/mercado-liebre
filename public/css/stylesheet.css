@@ -116,12 +116,15 @@ h5 {
   border-right: none;
   border: none;
   border-radius: 12px 0px 0px 12px;
+  height: 32px;
+  padding: 0 15px;
 }
 
 .buscador .icono-busqueda {
   width: 10%;
   background-color: var(--white);
   border-color: var(--white);
+  height: 30px;
 }
 
 .flex {
@@ -307,6 +310,12 @@ h5 {
   .contenedor-logo {
     width: 33.33%;
     padding-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contenedor-logo img {
+    max-width: 177px;
   }
 
   .buscador {
