@@ -144,6 +144,10 @@ h5 {
   color: var(--light-grey);
 }
 
+.banner {
+  margin-bottom: -4px;
+}
+
 /* Main */
 
 .main {
@@ -400,5 +404,19 @@ h5 {
 
   .form-container form {
     width: 40%;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    padding: 60px 40px;
+  }
+
+  .footer-texto {
+    padding: 0 20px;
+  }
+
+  .foter-texto-icono i:hover {
+    color: var(--dark-blue);
   }
 }
