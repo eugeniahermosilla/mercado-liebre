@@ -27,7 +27,10 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+li,
+input,
+label {
   font-family: "Roboto", sans-serif;
 }
 
@@ -264,6 +267,38 @@ h5 {
   color: var(--light-blue);
 }
 
+/* forms */
+.input-full {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.form-container {
+  padding: 20px 0;
+}
+
+.form-container input {
+  margin: 20px 0;
+}
+
+.grupo-inputs {
+  margin-top: 10px;
+}
+
+.submit {
+  width: 100%;
+  border: none;
+  background-color: var(--light-blue);
+  color: var(--light-grey);
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
 /* tablets */
 
 @media (min-width: 361px) {
@@ -330,6 +365,16 @@ h5 {
   .articulo {
     width: 47%;
   }
+
+  /* forms */
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container form {
+    width: 60%;
+  }
 }
 
 /* Desktop */
@@ -337,5 +382,9 @@ h5 {
 @media (min-width: 769px) {
   .articulo {
     width: 23%;
+  }
+
+  .form-container form {
+    width: 40%;
   }
 }

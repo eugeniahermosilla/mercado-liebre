@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre - Login</title>
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-principal">
+          <div class="header-secundario">
+            <div class="contenedor-logo">
+              <a href="/">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo" />
+              </a>
+            </div>
+
+            <div class="buscador">
+              <input type="text" placeholder="Ingrese su busqueda" />
+              <div class="icono-busqueda">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+
+            <div class="texto-compra">
+              <p class="center">
+                <i class="fas fa-hand-holding-usd icono-parrafo-inicio"></i
+                >Comprá en cuotas y sin tarjeta de crédito
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-container">
+            <ul class="menu-desktop">
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Tiendas Oficiales</a></li>
+              <li><a href="#">Vender</a></li>
+              <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="login-navbar">
+              <li>
+                <a href="register"
+                  >Crear cuenta
+                  <i class="far fa-address-card icono-parrafo"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Ingresa <i class="fas fa-sign-in-alt icono-parrafo"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Mis compras
+                  <i class="fas fa-shopping-basket icono-parrafo"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex">
+            <div class="burger-menu">
+              <i class="fa fa-bars burger"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main">
+        <div class="main-container">
+          <div class="form-container">
+            <form action="/">
+              <div>
+                <input
+                  type="text"
+                  id="nombreDeUsuario"
+                  placeholder="Nombre de usuario"
+                  class="input-full"
+                  minlength="5"
+                  maxlength="40"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="password"
+                  placeholder="Contraseña"
+                  class="input-full"
+                  minlength="5"
+                  maxlength="15"
+                  required
+                />
+              </div>
+
+              <div>
+                <input type="submit" value="Enviar" class="submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-texto">
+          <div class="foter-texto-icono">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <div class="footer-texto-titulo">
+            <h4 class="center">Pagá con tarjeta o en efectivo</h4>
+          </div>
+          <div class="footer-texto-descripcion">
+            <p class="center">
+              Con MercadoLiebreCash tenes cuotas sin interes con tarjeta o
+              efectivo en puntos de pago ¡Y siempre es seguro!
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-texto">
+          <div class="foter-texto-icono">
+            <i class="fas fa-gift"></i>
+          </div>
+          <div class="footer-texto-titulo">
+            <h4 class="center">Envio gratis desde los $2.500</h4>
+          </div>
+          <div class="footer-texto-descripcion">
+            <p class="center">
+              Solo por estar registrado en MercadoLiebre tenes envios gratis en
+              miles de productos. Es un beneficio de Mercado Puntos.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-texto">
+          <div class="foter-texto-icono">
+            <!-- no andaba el icono de seguridad -->
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="footer-texto-titulo">
+            <h4 class="center">Seguridad, de principio a fin</h4>
+          </div>
+          <div class="footer-texto-descripcion">
+            <p class="center">
+              ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+              puedas hacer, porque estás siempre protegid@.
+            </p>
+            <p class="copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
