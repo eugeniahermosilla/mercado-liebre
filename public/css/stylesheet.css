@@ -308,7 +308,7 @@ h5 {
 
 /* tablets */
 
-@media (min-width: 361px) {
+@media (min-width: 768px) {
   /* main */
 
   .contenedor-logo {
@@ -331,10 +331,6 @@ h5 {
 
   .articulo-descripcion-nombre {
     display: block;
-  }
-
-  .articulo {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
   .menu-container {
@@ -397,9 +393,31 @@ h5 {
 
 /* Desktop */
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .articulo {
     width: 23%;
+  }
+
+  .articulo:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .articulo-descripcion-nombre {
+    display: none;
+  }
+
+  .articulo-descripcion:hover .articulo-descripcion-nombre {
+    display: block;
+  }
+
+  .icono-camion {
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+  }
+
+  .icono-camion:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 
   .form-container form {
